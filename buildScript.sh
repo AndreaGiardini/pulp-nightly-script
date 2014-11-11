@@ -35,8 +35,8 @@ for proj in $projects; do
         #Copy results for each folder
         for pr in $pullReqs; do
             cp -r /tmp/tito/* "$repoFolder$pr"
-            cp -r /tmp/tito/* "${repoFolder}master"
         done
+        cp -r /tmp/tito/* "${repoFolder}master"
         rm -fr /tmp/tito/*
     fi
     popd
